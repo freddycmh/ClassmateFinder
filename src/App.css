@@ -1,9 +1,10 @@
 body {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    border: 5px red solid;
 }
 
 /* cards */
@@ -12,6 +13,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border: 5px red solid;
 
 }
 
@@ -20,6 +22,7 @@ body {
 /* header */
 nav {
     width: 100%;
+    
 }
 
 /* footer */
