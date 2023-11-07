@@ -1,0 +1,25 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* cards */
+
+.actionCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+
+/* header */
+nav {
+    width: 100%;
+}
+
+/* footer */
