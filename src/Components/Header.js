@@ -15,7 +15,7 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home</a>
+            <a className="nav-link" href="#" path="/classmate">Home</a>
           </li>
         </ul>
         <ul className="navbar-nav" style={{ marginLeft: 'auto' }}>

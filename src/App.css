@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    border: 5px red solid;
+    /* border: 5px red solid; */
 }
 
 /* cards */
@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 5px red solid;
+    /* border: 5px red solid; */
 
 }
 
@@ -39,3 +39,12 @@ nav {
     /* Adjust the text color as needed */
     padding: 10px;
 }
+
+
+
+.card-link {
+    /* Inherit the text color from the parent card */
+    cursor: pointer;
+}
+
+
