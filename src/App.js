@@ -10,8 +10,8 @@ import { useState } from 'react';
 
 function App() {
 const [tabs, useTabs] = useState([
-  { name: 'classmate finder', img:'https://static.vecteezy.com/system/resources/previews/016/062/036/non_2x/quiz-time-logo-icon-symbol-cartoon-yellow-bubble-speech-vector.jpg'},
-  { name: 'quizcard', img:'https://static.vecteezy.com/system/resources/previews/016/062/036/non_2x/quiz-time-logo-icon-symbol-cartoon-yellow-bubble-speech-vector.jpg'},
+  { name: 'classmate', img:'https://e.saravanaonline.com/img/m/238.jpg'},
+  { name: 'quizcard', img:'https://t3.ftcdn.net/jpg/02/10/55/50/360_F_210555062_97wqh5aRVaV2c7zcbY3zdMTYqxUpjF4j.webp'}
   
   
   
@@ -34,7 +34,7 @@ const [tabs, useTabs] = useState([
      
 
       
-      {/* <Footer className="footer"/> */}
+      <Footer className="footer"/>
 
     </div>
   );

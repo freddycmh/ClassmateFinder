@@ -1,16 +1,20 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = (props) => {
   return (
-    <div class="card" style={{ width: "18rem" }}>
-      <a>
-    <img src={props.img} class="card-img-top" alt="..."/>
-        <div class="card-body">
-        <p class="card-text">{props.name}</p>
+    <div className="card" style={{ width: "18rem" }}>
+      <img src={props.img} className="card-img-top" alt="..." />
+      <div className="card-body">
+        <p className="card-text">{props.name}</p>
       </div>
-      </a>
-        </div>
-  )
+    </div>
+  );
 }
 
-export default Card
+Card.propTypes = {
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
+export default Card;
