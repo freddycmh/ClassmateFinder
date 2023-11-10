@@ -47,4 +47,29 @@ nav {
     cursor: pointer;
 }
 
+.form-control.home-search-box{
+    max-width: 70%;
+}
+
+.btn.home-search-button{
+    max-width: 27%;
+
+}
+
+.home-search-container{
+    padding-bottom: 15px;
+}
+
+.home-subtitle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-subtitle{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
 
