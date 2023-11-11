@@ -7,22 +7,26 @@ import { useParams } from 'react-router-dom';
 import '../Style/Class.css';
 
 const dummyData = [
-  { id: 1, name: 'John' },
-  { id: 2, name: 'Jane' },
-  { id: 3, name: 'John' },
-  { id: 4, name: 'Jane' },
-  { id: 5, name: 'John' },
-  { id: 6, name: 'Jane' },
-  { id: 7, name: 'John' },
-  { id: 8, name: 'John' },
+  { id: 1, name: 'John Doe', yearOfStudy: 'Sophomore', major: 'Computer Science', email: 'john.doe@example.com' },
+  { id: 2, name: 'Jane Smith', yearOfStudy: 'Junior', major: 'Electrical Engineering', email: 'jane.smith@example.com' },
+  { id: 3, name: 'Bob Johnson', yearOfStudy: 'Freshman', major: 'Mechanical Engineering', email: 'bob.johnson@example.com' },
+  { id: 4, name: 'Alice Williams', yearOfStudy: 'Senior', major: 'Mathematics', email: 'alice.williams@example.com' },
+  { id: 5, name: 'Charlie Brown', yearOfStudy: 'Sophomore', major: 'Physics', email: 'charlie.brown@example.com' },
+  { id: 6, name: 'Eva Davis', yearOfStudy: 'Junior', major: 'Chemistry', email: 'eva.davis@example.com' },
+  { id: 7, name: 'Frank Wilson', yearOfStudy: 'Senior', major: 'Biology', email: 'frank.wilson@example.com' },
+  { id: 8, name: 'Grace Lee', yearOfStudy: 'Freshman', major: 'Environmental Science', email: 'grace.lee@example.com' },
   // Add more dummy data as needed
 ];
+
+const profData = {id: 9, name: 'Prof. Bob', yearOfStudy: 'Professor', major: 'Environmental Science', email: 'profBob@example.com'}
 
 
 
 const Class = () => {
   const {classname} = useParams();
   const [searchTerm, setSearchTerm] = useState('');
+
+
 
   return (
     <div>
@@ -34,7 +38,7 @@ const Class = () => {
           <div className="col-2">
             <Profile
                 key="prof"
-                name="Prof. Bob"
+                data= {profData}
                 isHighlighted = {false}
               />
           </div>
@@ -64,10 +68,12 @@ const Class = () => {
         
         <div className="profile-container">
           {dummyData.map(profile => (
-            <div key={profile.id} className="col-md-2">
+            
+            <div key={profile.id} className="col-md-2 border">
+              {/* {console.log(profile)} */}
               <Profile
                 key={profile.id}
-                name={profile.name}
+                data={profile}
                 isHighlighted={searchTerm && profile.name.toLowerCase().includes(searchTerm.toLowerCase())}
               />
             </div>
