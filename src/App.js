@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Footer from './Components/Footer';
 import Card from './Components/Card';
 import Class from './Pages/Class';
+import Student from './Pages/Student';
 import Quizlet from './Pages/Quizlet';
 import './App.css'; // Import your CSS for the old-style layout.
 
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/class/:classname" element={<Class />} />
+        <Route path="/student/:studentData" element={<Student />}/>
       </Routes>
 
     </Router>
