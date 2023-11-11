@@ -32,7 +32,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/class" element={<Class />} />
+        <Route path="/class/:classname" element={<Class />} />
       </Routes>
 
     </Router>

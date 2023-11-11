@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuth } from '../Components/AuthContext';
+import {Link} from 'react-router-dom'
 import Login from './Login';
 import Signup from './Signup';
 
@@ -15,7 +16,12 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#" path="/classmate">Home</a>
+            <Link to="/" className="nav-link">Home</Link>
+          </li>
+        </ul>
+        <ul className="navbar-nav">
+          <li className="nav-item active">
+            <Link to="/class" className="nav-link">Class</Link>
           </li>
         </ul>
         <ul className="navbar-nav" style={{ marginLeft: 'auto' }}>

@@ -1,8 +1,12 @@
 import React, {useState} from "react";
 import Header from "../Components/Header";
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import "../App.css"
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
     const allClass = [
         { id: 1, className: "CISC 1" },
         { id: 2, className: "ENGL 1" },
@@ -85,7 +89,8 @@ const Home = () => {
                                         <div className="list-container">
                                             <ul className="list-group">
                                                 {filteredClass.map(({ id, className }) => (
-                                                    <li key={id} className="list-group-item">{className}</li>
+                                                    <li key={id} className="list-group-item"><Link to={`/class/${className}`}>{className}</Link></li>
+                                                    
                                                 ))}
                                             </ul>
                                         </div>
