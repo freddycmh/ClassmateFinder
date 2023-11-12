@@ -98,3 +98,13 @@ nav {
     padding: 10px; /* Add padding for better visual appearance */
     border-radius: 5px; /* Add border radius for rounded corners */
 }
+
+
+/* LoginPage.css */
+.container {
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+}

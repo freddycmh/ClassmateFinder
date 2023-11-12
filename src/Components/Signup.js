@@ -1,19 +1,23 @@
 // Signup.js
 import React from 'react';
 import { useAuth } from '../Components/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
-
-function Signup() {
+const Signup = () => {
   const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleSignup = () => {
-    // Implement sign-up logic and set user name
-    login('User Name');
-  }
+
+    // Navigate to the signup route
+    navigate('/signup');
+  };
 
   return (
-    <button className="btn btn-success" onClick={handleSignup}>Sign Up</button>
+    <button className="btn btn-success" onClick={handleSignup}>
+      Sign Up
+    </button>
   );
-}
+};
 
 export default Signup;
