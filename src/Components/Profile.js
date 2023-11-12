@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Style/Profile.css';
 
-const defaultImageUrl = 'https://picsum.photos/100?grayscale';
+const defaultImageUrl = 'https://img.icons8.com/material-rounded/1921/00000/user-male-circle.png';
 
 const Profile = ({ data, isHighlighted }) => {
     
@@ -11,7 +11,7 @@ const Profile = ({ data, isHighlighted }) => {
         console.log(name)
         return (
             <div className={`profile ${isHighlighted ? 'highlighted' : ''}`}>
-                <Link to={`/student/${JSON.stringify(data)}`}>
+                <Link to={`/student/${JSON.stringify(data)}`} className="link-text">
                 <img src={defaultImageUrl} alt={`${name}'s profile`} />
                 <p>{name}</p>
                 </Link>

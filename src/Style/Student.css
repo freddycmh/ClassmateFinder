@@ -4,15 +4,27 @@
     border: 9px solid #d1d3e2;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
   }
   
   .info-label {
     font-weight: bold;
+    font-size: 18px;
   }
   
   .info-data {
     margin-top: 5px;
+  }
+
+  .name {
+    font-size: 22px; 
+    font-weight: bold;
+    font-family:'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;;
+    color: #007bff; 
+  }
+
+  .y-o-s{
+    font-style: oblique;
   }
 
   .bio-box {
@@ -20,6 +32,9 @@
     border: 1px solid #d1d3e2;
     padding: 10px;
     margin-bottom: 10px;
+    width: 300px;
+    max-height: 250px;
+    overflow-y: auto;
   }
   
   .bio-label {
@@ -29,5 +44,20 @@
   
   .bio-data {
     margin-top: 5px;
+  }
+
+  .profile-picture {
+    width: 300px; /* Adjust the width to your preference */
+    height: 300px; /* Adjust the height to your preference */
+  }
+
+  .copy-icon:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 975px) {
+    .bio-box {
+      width: auto; /* Auto width on smaller screens */
+    }
   }
   

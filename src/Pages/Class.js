@@ -69,7 +69,7 @@ const Class = () => {
         <div className="profile-container">
           {dummyData.map(profile => (
             
-            <div key={profile.id} className="col-md-2 border">
+            <div key={profile.id} className="col-md-2">
               {/* {console.log(profile)} */}
               <Profile
                 key={profile.id}
