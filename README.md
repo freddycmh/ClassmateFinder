@@ -1,3 +1,18 @@
+# Welcome to Class Helper
+Explore a wealth of features designed to make your college experience more connected and efficient. Our platform is tailored to enhance your academic journey with a clear focus on your success.
+
+## Classmate Search
+Connect effortlessly with your classmates using our intuitive Classmate Search function. Click on your class to discover and connect with fellow students. Collaborate on projects, share notes, and build a stronger academic network.
+
+## Quizcard Section (under development)
+Sharpen your knowledge with our Quizcard Section. Access quizzes posted by fellow students to aid in your study sessions. Search for quizzes related to your coursework, challenge yourself, and excel in your academic pursuits.
+
+To unlock these powerful features, please log in to your account. This ensures a personalized and secure experience tailored to your academic journey.
+
+## Contact Us
+Have questions or recommendations? We value your feedback! Reach out to us at smth@gmail.com, and our team will be delighted to assist you.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
