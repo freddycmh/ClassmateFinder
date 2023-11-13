@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ClassmateFinder/static/css/main.3d6b6aea.css",
-    "main.js": "/ClassmateFinder/static/js/main.a0166480.js",
+    "main.js": "/ClassmateFinder/static/js/main.b5bed3d7.js",
     "static/js/787.cbef9b6b.chunk.js": "/ClassmateFinder/static/js/787.cbef9b6b.chunk.js",
     "index.html": "/ClassmateFinder/index.html",
     "main.3d6b6aea.css.map": "/ClassmateFinder/static/css/main.3d6b6aea.css.map",
-    "main.a0166480.js.map": "/ClassmateFinder/static/js/main.a0166480.js.map",
+    "main.b5bed3d7.js.map": "/ClassmateFinder/static/js/main.b5bed3d7.js.map",
     "787.cbef9b6b.chunk.js.map": "/ClassmateFinder/static/js/787.cbef9b6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d6b6aea.css",
-    "static/js/main.a0166480.js"
+    "static/js/main.b5bed3d7.js"
   ]
 }
