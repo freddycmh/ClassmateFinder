@@ -39,10 +39,14 @@ function Header() {
         ) : (
           <>
             <li className="nav-item">
-              <Login />
-            </li>
-            <li className="nav-item">
-              <Signup />
+                 <Link to="/ClassmateFinder/login" className="nav-link nav-item" >
+              log in
+            </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/ClassmateFinder/signup" className="nav-link nav-item" >
+              Sign up
+            </Link>
             </li>
           </>
         )}
