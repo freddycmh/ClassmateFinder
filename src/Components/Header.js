@@ -17,7 +17,7 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item" style={{ borderLeft: '1px solid black', borderRight: '1px solid black', transition: 'border-color 0.3s' }}>
-            <Link to="/" className="nav-link" style={{ display: 'block', padding: '10px' }}>
+            <Link to="/ClassmateFinder" className="nav-link" style={{ display: 'block', padding: '10px' }}>
               Home
             </Link>
           </li>

@@ -13,6 +13,7 @@ import Footer from './Components/Footer';
 import { AuthProvider } from './Components/AuthContext';
 
 function App() {
+  console.log("hit");
   return (
     <Router>
 
@@ -20,13 +21,13 @@ function App() {
         <div className="App">
           
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/signup" element={<SignupPage />} />
-            <Route path="/class/:classname" element={<Class />} />
-            <Route path="/student/:studentData" element={<Student />} />
-            <Route path="/loginpause" element={<LoginPause />} />
-            <Route path="/addclass" element={<AddClass />} />
+            <Route path="/ClassmateFinder" element={<Home />} />
+            <Route path="/ClassmateFinder/login" element={<LoginPage />} />
+            <Route path="/ClassmateFinder/signup" element={<SignupPage />} />
+            <Route path="/ClassmateFinder/class/:classname" element={<Class />} />
+            <Route path="/ClassmateFinder/student/:studentData" element={<Student />} />
+            <Route path="/ClassmateFinder/loginpause" element={<LoginPause />} />
+            <Route path="/ClassmateFinder/addclass" element={<AddClass />} />
 
           </Routes>
           <Footer />

@@ -13,13 +13,13 @@ const LoginPause = () => {
                     <p className="card-text">Please login or register to access this page.</p>
                     <div>
                         <div className="mb-2">
-                            <Link to="/login" className="btn btn-primary">
+                            <Link to="/ClassmateFinder/login" className="btn btn-primary">
                                 Login
                             </Link>
                         </div>
                         <span>OR</span>
                         <div>
-                            <Link to="/signup" className="btn btn-success mt-2">
+                            <Link to="/ClassmateFinder/signup" className="btn btn-success mt-2">
                                 Register
                             </Link>
                         </div>

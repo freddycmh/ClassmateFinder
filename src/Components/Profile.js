@@ -11,7 +11,7 @@ const Profile = ({ data, isHighlighted }) => {
         console.log(name)
         return (
             <div className={`profile ${isHighlighted ? 'highlighted' : ''}`}>
-                <Link to={`/student/${JSON.stringify(data)}`} className="link-text">
+                <Link to={`/ClassmateFinder/student/${JSON.stringify(data)}`} className="link-text">
                 <img src={defaultImageUrl} alt={`${name}'s profile`} />
                 <p>{name}</p>
                 </Link>

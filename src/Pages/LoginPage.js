@@ -28,7 +28,7 @@ const LoginPage = () => {
     if (password == dummyPassword) {
 
       login(userData);
-      navigate('/');
+      navigate('/ClassmateFinder');
     }
 
     console.log("here")

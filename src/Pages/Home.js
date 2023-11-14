@@ -15,8 +15,8 @@ const Home = () => {
     const [allClass, setAllClass] = useState([
         { id: 1, className: "CISC 1" },
         { id: 2, className: "ENGL 1" },
-        { id: 3, className: "CISC 2" },
-        { id: 4, className: "CISC 2" }
+        { id: 3, className: "CISC 3" },
+        { id: 4, className: "PHYS 1" }
     ]);
     const allQuiz = [
         { id: 1, quizName: "CISC q1" },
@@ -113,9 +113,9 @@ const Home = () => {
                                                 {filteredClass.map(({ id, className }) => (
                                                     <li key={id} className="list-group-item">
                                                         {user ? (
-                                                            <Link to={`/class/${className}`} style={{color : "black"}}>{className}</Link>
+                                                            <Link to={`/ClassmateFinder/class/${className}`} style={{color : "black"}}>{className}</Link>
                                                         ) : (
-                                                            <Link to="/loginpause" style={{color : "black"}}>{className}</Link>
+                                                            <Link to="/ClassmateFinder/loginpause" style={{color : "black"}}>{className}</Link>
                                                             // or any other link or message you want to display for non-logged-in users
                                                         )}
 
@@ -134,9 +134,9 @@ const Home = () => {
                         <div className="row">
                             <div className="col">
                                 <div class="mt-2 me-3 d-grid">
-                                    {user? (<Link to="/addclass" className="btn btn-success mt-2">
+                                    {user? (<Link to="/ClassmateFinder/addclass" className="btn btn-success mt-2">
                                         Add Class
-                                    </Link>):(<Link to="/loginpause" className="btn btn-success mt-2">
+                                    </Link>):(<Link to="/ClassmateFinder/loginpause" className="btn btn-success mt-2">
                                         Add Class
                                     </Link>)}
                                     
@@ -212,7 +212,7 @@ const Home = () => {
 
                             <div>
                                 <p>
-                                    To unlock these powerful features, please <Link to={`/login`}>log in</Link> to your account. This ensures a personalized and secure experience tailored to your academic journey.
+                                    To unlock these powerful features, please <Link to={`/ClassmateFinder/login`}>log in</Link> to your account. This ensures a personalized and secure experience tailored to your academic journey.
                                 </p>
                             </div>
 

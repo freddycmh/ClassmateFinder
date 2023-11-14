@@ -49,7 +49,7 @@ const SignupPage = () => {
     }
     if (password == repassword) {
       login(userData);
-      navigate('/');
+      navigate('/ClassmateFinder');
     }
 
   };
