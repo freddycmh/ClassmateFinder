@@ -1,3 +1,4 @@
+# Don't change this branch - Serve as a control Unit
 # Welcome to Class Helper
 Explore a wealth of features designed to make your college experience more connected and efficient. Our platform is tailored to enhance your academic journey with a clear focus on your success.
 
