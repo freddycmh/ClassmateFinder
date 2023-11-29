@@ -20,31 +20,31 @@ const dummyData = [
   // Add more dummy data as needed
 ];
 
-const profData = {id: 9, name: 'Prof. Bob', yearOfStudy: 'Professor', major: 'Environmental Science', email: 'profBob@example.com'}
+const profData = { id: 9, name: 'Prof. Bob', yearOfStudy: 'Professor', major: 'Environmental Science', email: 'profBob@example.com' }
 
 
 
 const Class = () => {
   const { user } = useAuth();
-  const {classname} = useParams();
+  const { classname } = useParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [classmates, setClassmates] = useState(dummyData);
 
   const userData = user;
-  if(userData){
+  if (userData) {
     userData.id = 10;
   }
- 
+
   console.log(userData);
 
   const addToClass = () => {
     // Check if the user is already in the list
-    if(userData){
+    if (userData) {
       if (!classmates.some(profile => profile.id === userData.id)) {
         setClassmates(prevClassmates => [...prevClassmates, userData]);
       }
     }
-    
+
     console.log();
   };
 
@@ -59,38 +59,38 @@ const Class = () => {
         <div className="row">
           <div className="col-2">
             <Profile
-                key="prof"
-                data= {profData}
-                isHighlighted = {false}
-              />
+              key="prof"
+              data={profData}
+              isHighlighted={false}
+            />
           </div>
           <div className="col-7 d-flex align-items-center ">
             <h4 className="mb-0">{classname}</h4>
           </div>
           <div className="col-3 d-flex justify-content-end align-items-center">
             <button className="btn btn-primary" style={{ height: 'fit-content' }} onClick={addToClass}>Add to this class</button>
-          </div>  
+          </div>
         </div>
 
       </div>
       <div className="Class">
 
         <div className="d-flex justify-content-center">
-        <div className="input-group mb-3 search-bar">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Search classmates"
-            value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
-          />
-          {/* <button onClick={handleSearch}>Search</button> */}
+          <div className="input-group mb-3 search-bar">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Search classmates"
+              value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
+            />
+            {/* <button onClick={handleSearch}>Search</button> */}
+          </div>
         </div>
-        </div>
-        
+
         <div className="profile-container">
           {classmates.map(profile => (
-            
+
             <div key={profile.id} className="col-md-2">
               {/* {console.log(profile)} */}
               <Profile
