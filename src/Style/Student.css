@@ -1,63 +1,135 @@
 /* Student.css */
 .info-box {
-    background-color: #f8f9fa;
-    border: 9px solid #d1d3e2;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 35px;
-  }
+  background-color: #f8f9fa;
+  border: 9px solid #d1d3e2;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+
+.info-label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.info-data {
+  margin-top: 5px;
+}
+
+.name {
+  font-size: 28px;
+  /* Increased font size */
+  font-weight: bold;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #007bff;
+  letter-spacing: 1px;
+}
+
+.y-o-s {
+  font-style: oblique;
+}
+
+.bio-box {
+  background-color: rgba(217, 217, 217, 1);
+  border: 1px solid #d1d3e2;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.bio-label {
+  font-weight: bold;
+  font-style: italic;
+  position: sticky;
+  top: 0;
+  background-color: rgba(217, 217, 217, 1);
+  /* Match the background color of bio-box */
+  padding: 10px;
+  /* Optional: Add padding for better visibility */
+  z-index: 1;
+}
+
+.bio-data {
+  margin-top: 5px;
+}
+
+.profile-picture {
+  width: 300px;
+  /* Adjust the width to your preference */
+  height: 300px;
+  /* Adjust the height to your preference */
+}
+
+.copy-icon:hover {
+  cursor: pointer;
+}
+
+/* Student.css */
+/* Add these styles for the hover effect */
+.social-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
   
-  .info-label {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .info-data {
-    margin-top: 5px;
-  }
+  /* width: 100%; */
+}
 
-  .name {
-    font-size: 22px; 
-    font-weight: bold;
-    font-family:'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;;
-    color: #007bff; 
-  }
+.social-card:hover {
+  box-shadow: inset 0 0 0 5px rgba(221, 221, 215, 0.645); /* Border color on hover */
+}
 
-  .y-o-s{
-    font-style: oblique;
-  }
+.social-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-card:hover .social-icon img {
+  transform: scale(0.8);
+}
+
+.social-card:hover .social-card-body {
+  transform: translateY(0);
+}
+
+.social-card-body {
+  margin-top: 100px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+
+.social-card-info-body {
+  background-color: rgba(255, 255, 255, 0.795); /* Adjust the opacity as needed */
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.social-card-link{
+  text-decoration: none;
+}
+
+
+@media (max-width: 975px) {
   .bio-box {
-    background-color: rgba(217, 217, 217, 1);
-    border: 1px solid #d1d3e2;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 300px;
-    max-height: 250px;
-    overflow-y: auto;
+    width: auto;
+    /* Auto width on smaller screens */
   }
-  
-  .bio-label {
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  .bio-data {
-    margin-top: 5px;
-  }
-
-  .profile-picture {
-    width: 300px; /* Adjust the width to your preference */
-    height: 300px; /* Adjust the height to your preference */
-  }
-
-  .copy-icon:hover {
-    cursor: pointer;
-  }
-
-  @media (max-width: 975px) {
-    .bio-box {
-      width: auto; /* Auto width on smaller screens */
-    }
-  }
-  
+}
