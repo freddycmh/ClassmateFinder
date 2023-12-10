@@ -5,7 +5,7 @@ import AddClass from "./AddClass";
 import { useAuth } from "../Components/AuthContext";
 import "../App.css"
 
-const Home = () => {
+const AllQuiz = () => {
 
     const { user } = useAuth();
     const location = useLocation();
@@ -93,60 +93,7 @@ const Home = () => {
 
             <div className="container">
                 <div className="row">
-                    <div className="col">
-                        <div className="home-subtitle-container">
-                            <span className="home-subtitle">Class Search</span>
-                        </div>
-
-                        <div className="row home-search-container">
-
-                            <input type="text" className="form-control home-search-box" placeholder="Search" value={classSearchTerm} onChange={handleClassSearchChange} />
-                            <button className="btn btn-primary btn-sm home-search-button " type="button" onClick={handleClassSearchClick} >Search</button>
-
-                        </div>
-                        <div className="row all-list-item">
-                            <div className="me-3 col fixed-box">
-                                {
-                                    filteredClass.length > 0 ? (
-                                        <div className="list-container">
-                                            <ul className="list-group">
-                                                {filteredClass.map(({ id, className }) => (
-                                                    <li key={id} className="list-group-item">
-                                                        {user ? (
-                                                            <Link to={`/ClassmateFinder/class/${className}`} style={{color : "black"}}>{className}</Link>
-                                                        ) : (
-                                                            <Link to="/ClassmateFinder/loginpause" style={{color : "black"}}>{className}</Link>
-                                                            // or any other link or message you want to display for non-logged-in users
-                                                        )}
-
-                                                    </li>
-
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    ) : (
-                                        <p> No Class Found </p>
-                                    )
-                                }
-
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col">
-                                <div class="mt-2 me-3 d-grid">
-                                    {user? (<Link to="/ClassmateFinder/addclass" className="btn btn-success mt-2">
-                                        Add Class
-                                    </Link>):(<Link to="/ClassmateFinder/loginpause" className="btn btn-success mt-2">
-                                        Add Class
-                                    </Link>)}
-                                    
-                                    {/* <button class="btn btn-primary" type="button">Add Flipcard</button> */}
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div className="col unfinished">
+                    <div className="col unfinished">
                         <div className="home-subtitle-container">
                             <span className="home-subtitle">Flip Card Search</span>
                         </div>
@@ -183,22 +130,23 @@ const Home = () => {
                         <div className="overlay">
                             <p>This section is under development.</p>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col">
                         <h3 class="text-start">Welcome to Class Helper</h3>
 
                         <section class="text-start home-purpose">
-                            
+
                             <p>
                                 Explore a wealth of features designed to make your college experience more connected and efficient. Our platform is tailored to enhance your academic journey with a clear focus on your success.
                             </p>
 
+
                             <div>
-                                <h4>Classmate Search</h4>
+                                <h4>Quizcard Section (under development)</h4>
                                 <p>
-                                    Connect effortlessly with your classmates using our intuitive Classmate Search function. Click on your class to discover and connect with fellow students. Collaborate on projects, share notes, and build a stronger academic network.
+                                    Sharpen your knowledge with our Quizcard Section. Access quizzes posted by fellow students to aid in your study sessions. Search for quizzes related to your coursework, challenge yourself, and excel in your academic pursuits.
                                 </p>
                             </div>
 
@@ -212,7 +160,7 @@ const Home = () => {
                             <div>
                                 <h4>Contact Us</h4>
                                 <p>
-                                    Have questions or recommendations? We value your feedback! Reach out to us at <a href="mailto:team4hcibc@gmail.com?subject=Feedback&body=Hello%20there,">team4hcibc@gmail.com</a>, and our team will be delighted to assist you.
+                                    Have questions or recommendations? We value your feedback! Reach out to us at <a href="mailto:smth@gmail.com?subject=Feedback&body=Hello%20there,">smth@gmail.com</a>, and our team will be delighted to assist you.
                                 </p>
                             </div>
                         </section>
@@ -227,4 +175,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default AllQuiz;
