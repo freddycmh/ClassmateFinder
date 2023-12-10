@@ -10,7 +10,7 @@ const Profile = ({ data, isHighlighted }) => {
         const { name, email, major, yearOfStudy } = data;
         console.log(name)
         return (
-            <div className={`profile ${isHighlighted ? 'highlighted' : ''}`}>
+            <div className={`profile profile-item${isHighlighted ? 'highlighted' : ''}`}>
                 <Link to={`/ClassmateFinder/student/${JSON.stringify(data)}`} className="link-text">
                 <img src={defaultImageUrl} alt={`${name}'s profile`} />
                 <p>{name}</p>

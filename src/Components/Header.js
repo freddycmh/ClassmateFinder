@@ -21,6 +21,11 @@ function Header() {
               Home
             </Link>
           </li>
+          <li className="nav-item" style={{ borderRight: '1px solid black', transition: 'border-color 0.3s' }}>
+            <Link to="/ClassmateFinder/quiz" className="nav-link" style={{ display: 'block', padding: '10px' }}>
+              Quiz
+            </Link>
+          </li>
           {/* Add other navigation links as needed */}
         </ul>
       </div>
@@ -39,14 +44,14 @@ function Header() {
         ) : (
           <>
             <li className="nav-item">
-                 <Link to="/ClassmateFinder/login" className="nav-link nav-item" >
-              log in
-            </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/ClassmateFinder/signup" className="nav-link nav-item" >
-              Sign up
-            </Link>
+              <Link to="/ClassmateFinder/login" className="nav-link nav-item" style={{ display: 'block', padding: '10px', backgroundColor: 'blue', color: 'white' }}>
+                Log in
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/ClassmateFinder/signup" className="nav-link nav-item" style={{ display: 'block', padding: '10px', backgroundColor: 'green', color: 'white' }} >
+                Sign up
+              </Link>
             </li>
           </>
         )}

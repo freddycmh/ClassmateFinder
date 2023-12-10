@@ -8,6 +8,7 @@ import Class from './Pages/Class';
 import Student from './Pages/Student';
 import LoginPause from './Pages/LoginPause';
 import AddClass from './Pages/AddClass';
+import AllQuiz from './Pages/AllQuiz';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import { AuthProvider } from './Components/AuthContext';
@@ -22,6 +23,7 @@ function App() {
           
           <Routes>
             <Route path="/ClassmateFinder" element={<Home />} />
+            <Route path="/ClassmateFinder/quiz" element={<AllQuiz />} />
             <Route path="/ClassmateFinder/login" element={<LoginPage />} />
             <Route path="/ClassmateFinder/signup" element={<SignupPage />} />
             <Route path="/ClassmateFinder/class/:classname" element={<Class />} />
@@ -30,7 +32,6 @@ function App() {
             <Route path="/ClassmateFinder/addclass" element={<AddClass />} />
 
           </Routes>
-          <Footer />
         </div>
       </AuthProvider>
     </Router>
