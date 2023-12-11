@@ -42,6 +42,9 @@ const Class = () => {
     if (userData) {
       if (!classmates.some(profile => profile.id === userData.id)) {
         setClassmates(prevClassmates => [...prevClassmates, userData]);
+        alert("Added to class");
+      } else {
+        alert("User is already in the class");
       }
     }
 
